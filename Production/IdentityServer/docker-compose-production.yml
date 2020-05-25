@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  ngkidentity:
+    image: ngk/identity
+    container_name: ngk-identity
+    networks:
+    - ngk-bridge
+    environment:
+    - ASPNETCORE_ENVIRONMENT=Production
+networks:
+  ngk-bridge:
+    external: true

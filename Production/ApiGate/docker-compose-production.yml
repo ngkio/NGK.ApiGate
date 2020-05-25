@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  ngkapigate:
+    image: ngk/apigate
+    container_name: ngk-apigate
+    networks:
+    - ngk-bridge
+    environment:
+    - ASPNETCORE_ENVIRONMENT=Production
+    ports:
+    - "29890:29890"
+networks:
+  ngk-bridge:
+    external: true
