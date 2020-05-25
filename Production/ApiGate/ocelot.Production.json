@@ -9,7 +9,7 @@
         "Post",
         "Options"
       ],
-      "ServiceName": "WebApi",
+      "ServiceName": "ngk_api",
       "LoadBalancerOptions": {
         "Type": "RoundRobin"
       },
