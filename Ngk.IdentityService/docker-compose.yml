@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  ngkidentity:
+    build:
+      context: ../
+      dockerfile: Ngk.IdentityService/Dockerfile
+    restart: always
